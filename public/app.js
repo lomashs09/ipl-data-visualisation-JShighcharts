@@ -1,5 +1,5 @@
 function fetchAndVisualizeData() {
-    fetch('./data.json')
+    fetch('../matchesPlayedPerYear.json')
     .then(r => r.json())
     .then(data => {
         visualizeData(data);
@@ -12,26 +12,26 @@ function visualizeData(data) {
         type: "column"
       },
       title: {
-        text: "Monthly Average Rainfall"
+        text: "Total Matches Played Per Year 2008-17"
       },
       subtitle: {
-        text: "Source: WorldClimate.com"
+        text: "Source: iplt20.com"
       },
       xAxis: {
-        categories: data.categories,
+        categories: Object.keys(data),
         crosshair: true
       },
       yAxis: {
         min: 0,
         title: {
-          text: "Rainfall (mm)"
+          text: "Number of Matches Per Year"
         }
       },
       tooltip: {
         headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
         pointFormat:
           '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-          '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+          '<td style="padding:0"><b>{point.y} matches</b></td></tr>',
         footerFormat: "</table>",
         shared: true,
         useHTML: true
@@ -42,7 +42,10 @@ function visualizeData(data) {
           borderWidth: 0
         }
       },
-      series: data.series
+      series: [{
+        name: 'Matches Played per Season',
+        data: Object.values(data)
+      }]
     });
 }
 
