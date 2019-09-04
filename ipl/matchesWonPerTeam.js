@@ -1,6 +1,6 @@
-function matchesWonPerteam(jsonObj){
+function matchesWonPerteam(matches){
     let matchesWon ={};
-    jsonObj.filter(played =>{
+    matches.filter(played =>{
         
         if(played.winner in matchesWon)
         {
@@ -16,11 +16,17 @@ function matchesWonPerteam(jsonObj){
         }
         else
         {
-            matchesWon[played.winner]= { };
+            matchesWon[played.winner]= {};
         }
         
     })
+    const writeJsonFile = require('write-json-file');
+ 
+    (async () => {
+        await writeJsonFile('matchesPlayedPerYear.json', matchesWon);
+    })();
     return matchesWon;
     
 }
+
 module.exports = matchesWonPerteam
