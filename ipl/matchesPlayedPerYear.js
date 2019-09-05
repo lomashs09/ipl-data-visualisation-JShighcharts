@@ -10,12 +10,10 @@ function matchesPlayedPerYear(jsonObj) {
         matchesPlayedData[match.season] = 1;
     }
   });
-  const writeJsonFile = require('write-json-file');
- 
-  (async () => {
-      await writeJsonFile('matchesPlayedPerYear.json', matchesPlayedData);
-  })();
+
     return matchesPlayedData;
 }
 module.exports = matchesPlayedPerYear;
+
+
 

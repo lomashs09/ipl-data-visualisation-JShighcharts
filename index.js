@@ -8,24 +8,25 @@ const deliveriesObj='./csv_files/deliveries.csv'
 csv()
 .fromFile(matchesObj)
 .then((matches)=>{
-     console.log(matchesPlayedPerYear(matches));
+//     const ObjForJson = {}
+//     ObjForJson.matchesPlayed = matchesPlayedPerYear(matches)
+//     ObjForJson.matchesWon = matchesWonPerteam(matches)
+//     const writeJsonFile = require('write-json-file');
+ 
+// (async () => {
+//     await writeJsonFile('data1.json', ObjForJson);
+// })();
+    //  console.log(matchesPlayedPerYear(matches));
     // console.log(matchesWonPerteam(matches));
-    // console.log(matches)
-    // csv()
-    // .fromFile(deliveriesObj)
-    // .then((deliveries) => {
-    //     // console.log(deliveries)
-    //     console.log(extraRunConceded(matches, deliveries))
-    // })
+    csv()
+    .fromFile(deliveriesObj)
+    .then((deliveries) => {
+        console.log(extraRunConceded(matches, deliveries))
+    })
 })
 
 
-// csv()
-// .fromFile(deliveriesObj)
-// .then((deliveries) => {
-//     // console.log(deliveries)
-//     console.log(extraRunConceded(matches, deliveries))
-// })
+
 
 
 
