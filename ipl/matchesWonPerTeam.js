@@ -38,7 +38,6 @@ for(key in matchesWon)
     }
     a["data"] = b
     list.push(a)
-
 }
 return list
 }

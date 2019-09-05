@@ -1,14 +1,14 @@
 function extraRunConceded(matches,deliveries) {
-    extraRunsList=[]
+    var extraRunsList=[]
     matches.map((val) => { if(val.season == "2016"){
         extraRunsList.push(val.id)
     }}
     )
     extrasRunsObj = {}
     deliveries.map((value)=> {
-        if(extraRunsList[value.match_id]){
+        if(extraRunsList.includes(value.match_id)) {
             if(value.bowling_team in extrasRunsObj ){
-                extrasRunsObj[value.bowling_team]+= parseInt((value.extra_runs),10)
+                extrasRunsObj[value.bowling_team] += parseInt((value.extra_runs),10)
             }
             else{
                 extrasRunsObj[value.bowling_team] = parseInt((value.extra_runs),10)
@@ -16,6 +16,7 @@ function extraRunConceded(matches,deliveries) {
         }
     }
     )
-return extrasRunsObj
+    return extrasRunsObj
+
     }
 module.exports = extraRunConceded
