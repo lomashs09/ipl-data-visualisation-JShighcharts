@@ -118,7 +118,7 @@ function visualizeDataRun(data) {
       type: "column"
     },
     title: {
-      text: "Total Matches Played Per Year 2008-17"
+      text: "Extra Runs Conceded By Teams in 2016"
     },
     subtitle: {
       text: "Source: iplt20.com"
@@ -130,7 +130,7 @@ function visualizeDataRun(data) {
     yAxis: {
       min: 0,
       title: {
-        text: "Number of Matches Per Year"
+        text: "Extra Runs Conceded"
       }
     },
     tooltip: {
