@@ -1,6 +1,6 @@
 function matchesWonPerteam(matches){
     let matchesWon ={};
-    matches.filter(played =>{
+    matches.map(played =>{
         
         if(played.winner in matchesWon)
         {
@@ -16,14 +16,11 @@ function matchesWonPerteam(matches){
         else
         {
             matchesWon[played.winner]= {};
+            matchesWon[played.winner][played.season]=1;
         }
         
     })
-
-    // return matchesWon;
     return ObjtoListConverter(matchesWon);
-
-
 
 }
 function ObjtoListConverter(matchesWon){
@@ -41,6 +38,4 @@ for(key in matchesWon)
 }
 return list
 }
-
-
 module.exports = matchesWonPerteam

@@ -1,11 +1,11 @@
 function fetchAndVisualizeData() {
-    fetch('../data1.json')
+    fetch('../data.json')
     .then(r => r.json())
     .then(data => {
       visualizeData(data);
       visualizeDataWon(data);
       visualizeDataRun(data);
-        
+      visualizeDataEconomy(data)
     })
 }
 
@@ -52,7 +52,6 @@ function visualizeData(data) {
     });
 }
 fetchAndVisualizeData();
-
 
 function visualizeDataWon(data) {
 Highcharts.chart('new-container', {
@@ -149,8 +148,50 @@ function visualizeDataRun(data) {
       }
     },
     series: [{
-      name: 'Matches Played per Season',
+      name: 'IPl Teams',
       data: Object.values(data["extraRunsObj"])
+    }]
+  });
+}
+function visualizeDataEconomy(data) {
+  Highcharts.chart("eco-container", {
+    chart: {
+      type: "bar"
+    },
+    title: {
+      text: "Top 10 Economical Bowler 2015"
+    },
+    subtitle: {
+      text: "Source: iplt20.com"
+    },
+    xAxis: {
+      categories: Object.keys(data["topEconomy"]),
+      crosshair: true
+    },
+    yAxis: {
+      min: 0,
+      title: {
+        text: "Economy of Bowler"
+      }
+    },
+    tooltip: {
+      headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+      pointFormat:
+        '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+        '<td style="padding:0"><b>{point.y} matches</b></td></tr>',
+      footerFormat: "</table>",
+      shared: true,
+      useHTML: true
+    },
+    plotOptions: {
+      column: {
+        pointPadding: 0.2,
+        borderWidth: 0
+      }
+    },
+    series: [{
+      name: 'Economy',
+      data: Object.values(data["topEconomy"])
     }]
   });
 }

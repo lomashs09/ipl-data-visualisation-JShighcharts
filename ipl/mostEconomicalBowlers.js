@@ -10,5 +10,4 @@ function mostEconomicalBowlers(deliveries) {
       }
     ];
 }
-
 module.exports = mostEconomicalBowlers;
