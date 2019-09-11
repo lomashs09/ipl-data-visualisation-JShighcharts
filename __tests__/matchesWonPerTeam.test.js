@@ -142,4 +142,48 @@ it('When one Team match all Seasons' , () => {
 }
     ])).toEqual( [{"data": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "name": "Kings XI Punjab"}]);
 });
+it('When one Team match all Seasons' , () => {
+    expect(functions([
+{
+    season:'2008',
+    winner: 'Kings XI Punjab',
+},
+{
+    season:'2008',
+    winner: 'Kings XI Punjab',
+},
+{
+    season:'2008',
+    winner: 'Kings XI Punjab',
+},
+{
+    season:'2008',
+    winner: 'Kings XI Punjab',
+},
+{
+    season:'2008',
+    winner: 'Kings XI Punjab',
+},
+{
+    season:'2013',
+    winner: 'Kings XI Punjab',
+},
+{
+    season:'2014',
+    winner: 'Kings XI Punjab',
+},
+{
+    season:'2015',
+    winner: 'Kings XI Punjab',
+},
+{
+    season:'2016',
+    winner: 'Kings XI Punjab',
+},
+{
+    season:'2017',
+    winner: 'Kings XI Punjab',
+}
+    ])).toEqual( [{"data": [5, 0, 0, 0, 0, 1, 1, 1, 1, 1], "name": "Kings XI Punjab"}]);
+});
 })

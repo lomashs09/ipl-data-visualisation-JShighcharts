@@ -9,55 +9,17 @@ describe("Top Economical Bowlers in 2015", () => {
         [{
           id: '99',
           season: '2015',
-          city: 'Mumbai',
-          date: '2008-05-16',
-          team1: 'Kolkata Knight Riders',
-          team2: 'Mumbai Indians',
-          toss_winner: 'Mumbai Indians',
-          toss_decision: 'field',
-          result: 'normal',
-          dl_applied: '0',
-          winner: 'Mumbai Indians',
-          win_by_runs: '0',
-          win_by_wickets: '8',
-          player_of_match: 'SM Pollock',
-          venue: 'Wankhede Stadium',
-          umpire1: 'BR Doctrove',
-          umpire2: 'DJ Harper',
-          umpire3: ''
+          
         },
         {
           id: '100',
           season: '2015',
-          city: 'Delhi',
-          date: '2008-05-17',
-          team1: 'Delhi Daredevils',
-          team2: 'Kings XI Punjab',
-          toss_winner: 'Delhi Daredevils',
-          toss_decision: 'bat',
-          result: 'normal',
-          dl_applied: '1',
-          winner: 'Kings XI Punjab',
-          win_by_runs: '6',
-          win_by_wickets: '0',
-          player_of_match: 'DPMD Jayawardene',
-          venue: 'Feroz Shah Kotla',
-          umpire1: 'AV Jayaprakash',
-          umpire2: 'RE Koertzen',
-          umpire3: ''
+         
         }],
                   [
                     {
                       match_id: '99',
-                      inning: '1',
-                      batting_team: 'Sunrisers Hyderabad',
-                      bowling_team: 'Royal Challengers Bangalore',
-                      over: '16',
-                      ball: '6',
-                      batsman: 'DJ Hooda',
-                      non_striker: 'Yuvraj Singh',
                       bowler: 'YS Chahal',
-                      is_super_over: '0',
                       wide_runs: '0',
                       bye_runs: '0',
                       legbye_runs: '0',
@@ -65,22 +27,11 @@ describe("Top Economical Bowlers in 2015", () => {
                       penalty_runs: '0',
                       batsman_runs: '1',
                       extra_runs: '0',
-                      total_runs: '1',
-                      player_dismissed: '',
-                      dismissal_kind: '',
-                      fielder: ''
+                      total_runs: '1'
                     },
                     {
                       match_id: '100',
-                      inning: '1',
-                      batting_team: 'Sunrisers Hyderabad',
-                      bowling_team: 'Royal Challengers Bangalore',
-                      over: '17',
-                      ball: '1',
-                      batsman: 'DJ Hooda',
-                      non_striker: 'Yuvraj Singh',
                       bowler: 'TS Mills',
-                      is_super_over: '0',
                       wide_runs: '0',
                       bye_runs: '0',
                       legbye_runs: '0',
@@ -89,9 +40,6 @@ describe("Top Economical Bowlers in 2015", () => {
                       batsman_runs: '1',
                       extra_runs: '0',
                       total_runs: '1',
-                      player_dismissed: '',
-                      dismissal_kind: '',
-                      fielder: ''
                     },
                   ]
                 )
@@ -106,55 +54,16 @@ describe("Top Economical Bowlers in 2015", () => {
       [{
         id: '101',
         season: '2015',
-        city: 'Mumbai',
-        date: '2008-05-16',
-        team1: 'Kolkata Knight Riders',
-        team2: 'Mumbai Indians',
-        toss_winner: 'Mumbai Indians',
-        toss_decision: 'field',
-        result: 'normal',
-        dl_applied: '0',
-        winner: 'Mumbai Indians',
-        win_by_runs: '0',
-        win_by_wickets: '8',
-        player_of_match: 'SM Pollock',
-        venue: 'Wankhede Stadium',
-        umpire1: 'BR Doctrove',
-        umpire2: 'DJ Harper',
-        umpire3: ''
       },
       {
         id: '102',
         season: '2015',
-        city: 'Delhi',
-        date: '2008-05-17',
-        team1: 'Delhi Daredevils',
-        team2: 'Kings XI Punjab',
-        toss_winner: 'Delhi Daredevils',
-        toss_decision: 'bat',
-        result: 'normal',
-        dl_applied: '1',
-        winner: 'Kings XI Punjab',
-        win_by_runs: '6',
-        win_by_wickets: '0',
-        player_of_match: 'DPMD Jayawardene',
-        venue: 'Feroz Shah Kotla',
-        umpire1: 'AV Jayaprakash',
-        umpire2: 'RE Koertzen',
-        umpire3: ''
+        
       }],
                 [
                   {
                     match_id: '101',
-                    inning: '1',
-                    batting_team: 'Sunrisers Hyderabad',
-                    bowling_team: 'Royal Challengers Bangalore',
-                    over: '16',
-                    ball: '1',
-                    batsman: 'DJ Hooda',
-                    non_striker: 'Yuvraj Singh',
                     bowler: 'V Kohli',
-                    is_super_over: '0',
                     wide_runs: '0',
                     bye_runs: '0',
                     legbye_runs: '0',
@@ -163,19 +72,9 @@ describe("Top Economical Bowlers in 2015", () => {
                     batsman_runs: '1',
                     extra_runs: '0',
                     total_runs: '1',
-                    player_dismissed: '',
-                    dismissal_kind: '',
-                    fielder: ''
                   },
                   {
                     match_id: '102',
-                    inning: '1',
-                    batting_team: 'Sunrisers Hyderabad',
-                    bowling_team: 'Royal Challengers Bangalore',
-                    over: '17',
-                    ball: '2',
-                    batsman: 'DJ Hooda',
-                    non_striker: 'Yuvraj Singh',
                     bowler: 'V Kohli',
                     is_super_over: '0',
                     wide_runs: '1',
@@ -186,9 +85,6 @@ describe("Top Economical Bowlers in 2015", () => {
                     batsman_runs: '1',
                     extra_runs: '0',
                     total_runs: '1',
-                    player_dismissed: '',
-                    dismissal_kind: '',
-                    fielder: ''
                   },
                 ]
               )
@@ -202,53 +98,16 @@ it("When Bowler Bowled Wide and No Ball", () => {
     [{
       id: '101',
       season: '2015',
-      city: 'Mumbai',
-      date: '2008-05-16',
-      team1: 'Kolkata Knight Riders',
-      team2: 'Mumbai Indians',
-      toss_winner: 'Mumbai Indians',
-      toss_decision: 'field',
-      result: 'normal',
-      dl_applied: '0',
-      winner: 'Mumbai Indians',
-      win_by_runs: '0',
-      win_by_wickets: '8',
-      player_of_match: 'SM Pollock',
-      venue: 'Wankhede Stadium',
-      umpire1: 'BR Doctrove',
-      umpire2: 'DJ Harper',
-      umpire3: ''
+      
     },
     {
       id: '102',
       season: '2015',
-      city: 'Delhi',
-      date: '2008-05-17',
-      team1: 'Delhi Daredevils',
-      team2: 'Kings XI Punjab',
-      toss_winner: 'Delhi Daredevils',
-      toss_decision: 'bat',
-      result: 'normal',
-      dl_applied: '1',
-      winner: 'Kings XI Punjab',
-      win_by_runs: '6',
-      win_by_wickets: '0',
-      player_of_match: 'DPMD Jayawardene',
-      venue: 'Feroz Shah Kotla',
-      umpire1: 'AV Jayaprakash',
-      umpire2: 'RE Koertzen',
-      umpire3: ''
+      
     }],
               [
                 {
                   match_id: '101',
-                  inning: '1',
-                  batting_team: 'Sunrisers Hyderabad',
-                  bowling_team: 'Royal Challengers Bangalore',
-                  over: '16',
-                  ball: '1',
-                  batsman: 'DJ Hooda',
-                  non_striker: 'Yuvraj Singh',
                   bowler: 'V Kohli',
                   is_super_over: '0',
                   wide_runs: '0',
@@ -259,19 +118,9 @@ it("When Bowler Bowled Wide and No Ball", () => {
                   batsman_runs: '1',
                   extra_runs: '0',
                   total_runs: '1',
-                  player_dismissed: '',
-                  dismissal_kind: '',
-                  fielder: ''
                 },
                 {
                   match_id: '102',
-                  inning: '1',
-                  batting_team: 'Sunrisers Hyderabad',
-                  bowling_team: 'Royal Challengers Bangalore',
-                  over: '17',
-                  ball: '2',
-                  batsman: 'DJ Hooda',
-                  non_striker: 'Yuvraj Singh',
                   bowler: 'V Kohli',
                   is_super_over: '0',
                   wide_runs: '1',
@@ -282,14 +131,235 @@ it("When Bowler Bowled Wide and No Ball", () => {
                   batsman_runs: '5',
                   extra_runs: '0',
                   total_runs: '1',
-                  player_dismissed: '',
-                  dismissal_kind: '',
-                  fielder: ''
                 },
               ]
             )
 
 ).toEqual({"V Kohli": 48});
+});
+
+
+it("When More than 10 Bowlers Bolwed deliveries which includes some no balls and wide balls", () => {
+  expect(functions(
+    [{
+      id: '99',
+      season: '2015',
+      
+    },
+    {
+      id: '100',
+      season: '2015',
+     
+    },
+    {
+      id: '101',
+      season: '2015',
+     
+    },  {
+      id: '102',
+      season: '2015',
+     
+    },
+    {
+      id: '103',
+      season: '2015',
+     
+    },
+    {
+      id: '104',
+      season: '2015',
+     
+    },
+    {
+      id: '105',
+      season: '2015',
+     
+    },
+    {
+      id: '106',
+      season: '2015',
+     
+    },
+    {
+      id: '107',
+      season: '2015',
+     
+    },
+    {
+      id: '108',
+      season: '2015',
+     
+    },  {
+      id: '109',
+      season: '2015',
+     
+    },  {
+      id: '111',
+      season: '2015',
+     
+    }],
+              [{
+                match_id: '111',
+                bowler: 'YS Chahal',
+                wide_runs: '0',
+                bye_runs: '0',
+                legbye_runs: '0',
+                noball_runs: '0',
+                penalty_runs: '0',
+                batsman_runs: '8',
+                extra_runs: '0',
+                total_runs: '1'
+              },
+                {
+                  match_id: '110',
+                  bowler: 'YS Chahal',
+                  wide_runs: '0',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '0',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },               {
+                  match_id: '109',
+                  bowler: 'sachin',
+                  wide_runs: '1',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '0',
+                  penalty_runs: '0',
+                  batsman_runs: '4',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },               {
+                  match_id: '108',
+                  bowler: 'sachin',
+                  wide_runs: '0',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '2',
+                  penalty_runs: '0',
+                  batsman_runs: '3',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },               {
+                  match_id: '107',
+                  bowler: 'sachin',
+                  wide_runs: '1',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '1',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },               {
+                  match_id: '106',
+                  bowler: 'YS',
+                  wide_runs: '1',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '2',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },               {
+                  match_id: '105',
+                  bowler: 'Chahal',
+                  wide_runs: '0',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '0',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },               {
+                  match_id: '104',
+                  bowler: 'MSD',
+                  wide_runs: '0',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '0',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },               {
+                  match_id: '103',
+                  bowler: 'loki',
+                  wide_runs: '0',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '0',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },               {
+                  match_id: '102',
+                  bowler: 'Yas',
+                  wide_runs: '0',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '0',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },
+                {
+                  match_id: '101',
+                  bowler: 'P kumar',
+                  wide_runs: '0',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '0',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },
+                {
+                  match_id: '99',
+                  bowler: 'YS Chahal',
+                  wide_runs: '0',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '0',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1'
+                },
+                {
+                  match_id: '100',
+                  bowler: 'TS Mills',
+                  wide_runs: '0',
+                  bye_runs: '0',
+                  legbye_runs: '0',
+                  noball_runs: '0',
+                  penalty_runs: '0',
+                  batsman_runs: '1',
+                  extra_runs: '0',
+                  total_runs: '1',
+                },
+              ]
+            )
+
+).toEqual({"Chahal": 6,
+            "MSD": 6,
+            "P kumar": 6,
+            "TS Mills": 6,
+            "YS Chahal": 6,
+            "YS":24,
+            "YS Chahal":27,
+            "Yas": 6,
+            "loki":6,
+            "sachin":78,
+});
 });
 
 })

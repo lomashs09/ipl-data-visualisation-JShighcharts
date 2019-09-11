@@ -65,7 +65,7 @@ Highcharts.chart('new-container', {
     text: "Source: iplt20.com"
   },
   xAxis: {
-    categories: ['2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018']
+    categories:  Object.keys(data["matchesPlayed"])
   },
   yAxis: {
     min: 0,
@@ -178,7 +178,7 @@ function visualizeDataEconomy(data) {
       headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
       pointFormat:
         '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-        '<td style="padding:0"><b>{point.y} matches</b></td></tr>',
+        '<td style="padding:0"><b>{point.y} </b></td></tr>',
       footerFormat: "</table>",
       shared: true,
       useHTML: true

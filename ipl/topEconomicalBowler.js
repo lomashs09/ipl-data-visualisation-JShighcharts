@@ -1,27 +1,23 @@
+var utils = require('./utils')
 function topEconomicalBolwer(matches, deliveries) {
-  extraRunsList = [];
-  matches.map(val => {
-    if (val.season == "2015") {
-      extraRunsList.push(val.id);
-    }
-  });
+  utils.matches2015(matches)   
   allBowlersList = {};
-  deliveries.reduce((acc, currValue) => {
-    if (extraRunsList.includes(currValue.match_id)) {
-      if (currValue.bowler in allBowlersList) {
-        allBowlersList[currValue.bowler].totalRuns +=
-          parseInt(currValue.wide_runs, 10) +
-          parseInt(currValue.noball_runs, 10) +
-          parseInt(currValue.batsman_runs, 10);
-        if (currValue.wide_runs == 0 && currValue.noball_runs == 0) {
-          allBowlersList[currValue.bowler].totalBalls += 1;
+  deliveries.reduce((acc, currBowler) => {
+    if (matchId2015.has(currBowler.match_id)) {
+      if (currBowler.bowler in allBowlersList) {
+        allBowlersList[currBowler.bowler].totalRuns +=
+          parseInt(currBowler.wide_runs, 10) +
+          parseInt(currBowler.noball_runs, 10) +
+          parseInt(currBowler.batsman_runs, 10);
+        if (currBowler.wide_runs == 0 && currBowler.noball_runs == 0) {
+            allBowlersList[currBowler.bowler].totalBalls += 1;
         }
       } else {
-        allBowlersList[currValue.bowler] = {
+        allBowlersList[currBowler.bowler] = {
           totalRuns:
-            parseInt(currValue.wide_runs, 10) +
-            parseInt(currValue.noball_runs, 10) +
-            parseInt(currValue.batsman_runs, 10),
+            parseInt(currBowler.wide_runs, 10) +
+            parseInt(currBowler.noball_runs, 10) +
+            parseInt(currBowler.batsman_runs, 10),
           totalBalls: 1
         };
       }
@@ -45,7 +41,7 @@ function topEconomicalBolwer(matches, deliveries) {
   temp.forEach(element => {
     topBowlersObj[element[0]] = element[1];        // Converting list into Object to convert into Json Object for HighGraphs
   });
-  return topBowlersObj;
 
+  return topBowlersObj;
 }
 module.exports = topEconomicalBolwer;

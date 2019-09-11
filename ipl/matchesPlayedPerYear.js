@@ -3,7 +3,7 @@ function matchesPlayedPerYear(jsonObj) {
     return 0;
   }
   var matchesPlayedData = {};
-  jsonObj.filter(match => {
+  jsonObj.map(match => {
     if (match.season in matchesPlayedData) {
         matchesPlayedData[match.season] += 1;
     } else {
