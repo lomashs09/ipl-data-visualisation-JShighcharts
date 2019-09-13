@@ -1,8 +1,8 @@
 var utils = require('./utils')
 
 function extraRunConceded(matches,deliveries) {
-    utils.matches2016(matches)
-    extrasRunsObj = {}
+    var matchId2016= utils.matches2016(matches)
+    var extrasRunsObj = {}
     deliveries.map((value)=> {
         if(matchId2016.has(value.match_id)) {
             if(value.bowling_team in extrasRunsObj ){
