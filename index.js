@@ -10,7 +10,7 @@ const deliveriesObj = "./csv_files/deliveries.csv";
 csv()
   .fromFile(matchesObj)
   .then(matches => {
-    ObjForJson = {};
+    const ObjForJson = {};
     ObjForJson.matchesPlayed = matchesPlayedPerYear(matches);
     ObjForJson.matchesWon = matchesWonPerteam(matches);
     
